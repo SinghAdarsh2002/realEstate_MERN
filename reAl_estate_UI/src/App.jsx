@@ -2,6 +2,8 @@ import "./index.scss";
 import "./routes/layout/layout.scss";
 import Layout from "./routes/layout/layout.jsx";
 import HomePage from "./routes/homePage/homePage.jsx";
+import SinglePage from "./routes/singlePage/singlePage.jsx";
+import ProfilePage from "./routes/profilePage/profilePage.jsx";
 
 import React, { Children } from "react";
 import {
@@ -20,16 +22,20 @@ function App() {
     children: [
       {
         path: "/",
-        element: <HomePage/>,
+        element: <HomePage/>
       },
       { 
         path: "/list",
-        element: <ListPage/>,
+        element: <ListPage/>
       },
       { 
-        path: "/:id",
-        element: <ListPage/>,
-      } 
+        path:"/:id",
+        element: <SinglePage />
+      },
+      { 
+        path:"/profile",
+        element: <ProfilePage />
+      }
     ]
     }
   ]);
