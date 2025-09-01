@@ -1,12 +1,12 @@
 import React from 'react'
 import "./listPage.scss";
-import { listData } from '../../lib/dummydata';
+import dummyData from "../../lib/dummyData";
 import Filter from '../../components/filter/Filter'; // Ensure the path is correct
 import Card from '../../components/cards/Card'; // Ensure the path is correct
 import Map from "../../components/map/Map";
 
 const ListPage = () => {
-    const data = listData; // Assuming you want to use the dummy data here
+    const data = dummyData; // Changed to dummyData
 
   return (
     <div className='listPage'>
