@@ -1,6 +1,6 @@
 import "./index.scss";
 import "./routes/layout/layout.scss";
-import Layout from "./routes/layout/layout.jsx";
+import Layout from "./routes/layout/Layout.jsx";
 import HomePage from "./routes/homePage/homePage.jsx";
 import SinglePage from "./routes/singlePage/singlePage.jsx";
 import ProfilePage from "./routes/profilePage/profilePage.jsx";
